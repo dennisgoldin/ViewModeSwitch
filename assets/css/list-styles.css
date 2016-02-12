@@ -1,7 +1,10 @@
+* {
+    border: 1px dashed red;
+}
+
 body {
     font-family: 'Lato', 'Calibri', Arial, sans-serif;
     color: steelblue;
-    /*background: #47A3DA;*/
     margin: 0 auto;
 }
 
