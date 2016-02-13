@@ -1,6 +1,6 @@
 
-var gridView = document.querySelector("#gridIcon");
-var listView = document.querySelector("#listIcon");
+var gridView = document.querySelector("#gridLink");
+var listView = document.querySelector("#listLink");
 
 var gridStyle = document.querySelector("#grid");
 var listStyle = document.querySelector("#list");

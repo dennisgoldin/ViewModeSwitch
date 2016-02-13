@@ -1,12 +1,12 @@
- /*for debugging only*/
- div, h1, h2, h3, section, img, p , header, footer {
+ /* for debugging only
+h1, h2, h3, li, img, p , header, footer {
     border: 1px dashed red;
-}
+}*/
 
 body {
     font-family: 'Lato', 'Calibri', Arial, sans-serif;
-    color: lightcoral;
     margin: 0 auto;
+    color: #47A3DA;
     /*border: 1px dashed red;*/
 }
 
@@ -15,10 +15,21 @@ header {
   padding: 25px;
 }
 
-section {
-  width: 33%;
+ul {
+  /*padding-left: 10px;   grid view adjustment - double check */
+}
+
+li {
+  width: 28%;           /* 100%  list */
+  display: inline-block;
   text-align: center;
 }
+
+/* list
+li p {
+  text-align: left;
+}
+*/
 
 #mainContainer {
     border: 3px solid #47A3DA;
@@ -30,13 +41,92 @@ section {
   border-bottom: 3px solid #47A3DA;
   padding-bottom: 10px;
   text-align: right;
+  width: 100%;
+}
+
+.fa-2x {
+  font-size: 1.8em !important;
+}
+
+.gridIcon {
+  width: 35px;
+  height: 35px;
+  margin: 10px 0px 5px 0px;
   color: #47A3DA;
+  /*color: rgb(193, 193, 193);*/
+  text-decoration: none;
+  vertical-align: middle;
 }
 
-#gridIcon {
+#gridLink {
 
 }
 
-#listIcon {
+.listIcon {
+  width: 35px;
+  height: 35px;
+  margin: 10px 0px 5px 0px;
+  /*color: #47A3DA;*/
+  color: rgb(193, 193, 193);
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.listIcon:hover {
+  color: #47A3DA;
+  transition: background 0.2s;
+}
+
+#listlink{
 
 }
+
+.itemView {
+    padding: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    min-height: 380px;
+    vertical-align: top;
+}
+
+.itemLink {
+  text-decoration: none;
+}
+
+.itemImage {
+  padding-bottom: 5px;
+}
+
+.itemName {
+  font-size: 2em;
+  font-weight: bold;
+  /*box-sizing: border-box;*/
+}
+
+.itemPrice {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+    color: rgb(193, 193, 193);
+}
+
+.itemInfo {
+  max-width: 310px;
+  min-height: 70px;
+  margin: 0px;
+  vertical-align: baseline;
+}
+
+.itemButton {
+  color: #FFF;
+  background: #47A3DA;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin: 15px 0 0;
+  display: inline-block;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+ .itemButton:hover {
+   background: #02639D;
+ }
