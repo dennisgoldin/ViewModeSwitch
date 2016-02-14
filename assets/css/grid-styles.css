@@ -1,5 +1,5 @@
- /* for debugging only
-h1, h2, h3, li, img, p , header, footer {
+/* for debugging only */
+    /*li, h1, h2, h3, li, img, p , header, footer {
     border: 1px dashed red;
 }*/
 
@@ -48,10 +48,6 @@ li {
   vertical-align: middle;
 }
 
-#gridLink {
-
-}
-
 .listIcon {
   width: 35px;
   height: 35px;
@@ -64,10 +60,6 @@ li {
 .listIcon:hover {
   color: #47A3DA;
   transition: color 0.2s;
-}
-
-#listlink{
-
 }
 
 .itemView {
@@ -98,7 +90,7 @@ li {
 }
 
 .itemInfo {
-  max-width: 310px;
+  /*max-width: 310px;*/
   min-height: 70px;
   margin: 0px;
   vertical-align: baseline;
@@ -114,6 +106,49 @@ li {
   transition: background 0.2s;
   text-decoration: none;
 }
- .itemButton:hover {
-   background: #02639D;
- }
+
+.itemButton:hover {
+  background: #02639D;
+}
+
+/* Any screen at 500px */
+@media only screen and (max-width: 500px) {
+    li {
+        width: 85%;
+    }
+    .itemButton {
+      margin-top: 0px;
+    }
+}
+
+/* Any screen at 768px */
+@media only screen and (min-width: 768px) {
+    li {
+        width: 40.5%;   /* two column */
+    }
+}
+
+/* Any screen at 1080px */
+@media only screen and (min-width: 1080px) {
+  li {
+    /* width: 43.5%;   two column */
+    width: 26.5%;    /* three column */
+  }
+}
+
+/* Any screen at 1115px wide */
+@media only screen and (min-width: 1115px) {
+    li {
+        width: 27%;
+    }
+}
+
+/* Any screen at 1200px wide */
+@media only screen and (min-width: 1440px) {
+    li {
+        width: 20%;
+    }
+    ul {
+      padding-left: 6px;
+    }
+}

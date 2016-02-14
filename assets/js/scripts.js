@@ -6,13 +6,13 @@ var gridStyle = document.querySelector("#grid");
 var listStyle = document.querySelector("#list");
 
 gridView.addEventListener('click', function () {
-  console.log("*Grid Click*");
+  // console.log("*Grid Click*");
   gridStyle.disabled = false;
   listStyle.disabled = true;
 });
 
 listView.addEventListener('click', function () {
-  console.log("*List Click*");
+  // console.log("*List Click*");
   gridStyle.disabled = true;
   listStyle.disabled = false;
 });
