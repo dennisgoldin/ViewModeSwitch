@@ -185,7 +185,7 @@ header {
 /* Any screen at 1080px */
 @media only screen and (min-width: 1080px) {
   #mainContainer {
-    margin: 0% 8% 0% 8%;
+    margin: 0% 5% 0% 5%;
   }
 
   .itemImage {
